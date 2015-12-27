@@ -1,18 +1,60 @@
-Title         : Welcome
-Author        : You
-Logo          : True
+pre,code{ language: cpp; }
+Title         : 01.1
+Author        : PowerSnail
+Logo          : False
 
 [TITLE]
 
-# Madoko 
 
-Madoko is a fast markdown processor for writing professional articles
-with a focus on simplicity and plain text readability.
 
-* Read the [reference manual].
-* Explore the upper-right toolbox menu to discover how Markdown works. 
-* `Alt-Q` reformats the current paragraph.
+# First Program
 
-Enjoy!
+## The `main` function
 
-[reference manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html  "Madoko refrence manual"
+ - OS runs the program by calling the `main` function.
+ - return a `int` value to the OS as an indicator of success or failure
+
+``` 
+  int main()
+  {
+    return 0;
+  }
+
+```
+
+## Function
+
+* return type     : `int`;
+* function name   : `main`;
+* parameter list  : empty;
+* function body   : 
+```
+  {
+    return 0;
+  }
+```
+
+## Type
+
+Defines the content of a data element ans operations.
+
+## Compilation
+
+Windows, Visual Studio.
+
+``` 
+  cl /EHsc prog1.cpp
+```
+
+# Exercises
+
+1.1: Naming convention of `cl.exe`
+
+> CL accepts files with names that follow FAT, HPFS, or NTFS naming conventions. Any filename can include a full or partial path. A full path includes a drive name and one or more directory names. CL accepts filenames separated either by backslashes (\) or forward slashes (/). Filenames that contain spaces must be surrounded by double quote characters. A partial path omits the drive name, which CL assumes to be the current drive. If you don't specify a path, CL assumes the file is in the current directory.
+> 
+> The filename extension determines how files are processed. C and C++ files, which have the extension .c, .cxx, or .cpp, are compiled. Other files, including .obj files, libraries (.lib), and module-definition (.def) files, are passed to the linker without being processed.
+
+from [MSDN]
+
+
+[MSDN]: https://msdn.microsoft.com/en-us/library/91621w01.aspx
